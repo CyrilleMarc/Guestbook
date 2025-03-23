@@ -6,13 +6,13 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class ConferenceController extends AbstractController
+class Error404Controller extends AbstractController
 {
-    #[Route('/conference', name: 'app_conference')]
+    #[Route('/error404', name: 'app_error404')]
     public function index(): Response
     {
-        return $this->render('conference/index.html.twig', [
-            'controller_name' => 'ConferenceController',
+        return $this->render('error404.html.twig', [
+            'controller_name' => 'Error404Controller',
         ]);
     }
 }
